@@ -316,3 +316,8 @@ body {
     text-decoration: none;
     color: pink;
 }
+
+
+table, th, td {
+    border: 1px solid white;
+}
