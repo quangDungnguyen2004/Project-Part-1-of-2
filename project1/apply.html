@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono&display=swap" rel="stylesheet">
+    <title>Application form</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="menu">
+            <img id="earthling-icon" src="../images/earthling icon.png" alt="Earthling Icon">
+            <a href="index.html" class="text-wrapper">EARTHLING</a>
+        </div>
+        <div class="mid-selections">
+            <a href="about.html" class="about-us">ABOUT US</a>
+            <a href="#" class="features">FEATURES</a>
+            <a href="#" class="enterprise">ENTERPRISE</a>
+            <a href="jobs.html" class="careers">CAREERS</a>
+            <a href="#" class="pricing">PRICING</a>
+        </div>
+        <div class="hidden-menu">
+            <img src="../images/dropdownbutton.png" alt="drop down button">
+        </div>
+        <div class="left-selections">
+            <div class="signin-button">SIGN IN</div>
+            <div class="download-button">DOWNLOAD</div>
+        </div>
+    </nav>
+    <main class="main">
+        <!--This is the application form to submit to formtest.php on Mercury-->
+        <form action="https://mercury.swin.edu.au/it000000/formtest.php">
+            <label for="refnum">Reference Number: </label>
+            <select name="refnum" id="refnum">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select><br><br>
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="fname" maxlength="20"><br><br>
+            <label for="lname">Last name: </label>
+            <input type="text" id="lname" name="lname" maxlength="20"><br><br>
+            <label for="dob">Date of Birth: </label>
+            <input type="date" id="dob" name="dob" value="dd/mm/yyyy"><br><br>
+            <fieldset>
+                <legend>Gender: </legend>
+                <input type="radio" id="male" name="gender" value="Male" checked>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+            </fieldset><br><br>
+            <label for="street">Street Address: </label><br>
+            <textarea id="street" name="street" maxlength="40" rows="1" cols="40"></textarea><br>
+            <label for="suburb">Suburb/town: </label><br>
+            <textarea id="suburb" name="suburb" value="Suburb/town" maxlength="40" rows="1" cols="40"></textarea><br><br>
+            <label for="postcode">Postcode: </label>
+            <input type="text" id="postcode" name="postcode" maxlength="4"><br><br>
+            <label for="state">State: </label>
+            <select name="state" id="state">
+                <option value="VIC" selected>VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <option value="NT">NT</option>
+                <option value="WA">WA</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TAS</option>
+                <option value="ACT">ACT</option>
+            </select><br><br>
+            <label for="email">Email: </label><br>
+            <textarea type="text" id="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" rows="1" cols="40"></textarea><br><br>
+            <label for="phone">Phone number: </label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" minlength="8" maxlength="12"><br><br>
+            <label>Required technical list: </label><br>
+            <input type="checkbox" id="skill1" name="skill1" value="skill1">
+            <label for="skill1"> skill1</label><br>
+            <input type="checkbox" id="skill2" name="skill2" value="skill2">
+            <label for="skill2"> skill2</label><br>
+            <input type="checkbox" id="skill3" name="skill3" value="skill3">
+            <label for="skill3"> skill3</label><br><br>
+            <label for="skills">Other Skills: </label>
+            <textarea id="skills" name="skills" rows="4" cols="40"></textarea><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="links">
+            <a href="#" class="pricing">Pricing</a>
+            <a href="#" class="careers">Careers</a>
+            <a href="#" class="term">Term</a>
+            <a href="#" class="github">GitHub</a>
+            <a href="#" class="jira">Jira</a> <!--add jira link here-->
+        </div>
+        <div class="contact-box">
+            <div class="contact">Contact:</div>
+            <a class="email" href="example@mail.com">example@mail.com</a>
+        </div>
+        <div class="copyright">Copyright © 2025 Earthling. All rights reserved.</div>
+    </footer>
+</body>
+</html>
