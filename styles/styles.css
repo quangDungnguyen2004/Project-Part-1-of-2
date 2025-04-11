@@ -132,8 +132,8 @@ body {
     transition: 0.3s ease-in, 0.3s ease-out;
 }
 .download-button:hover {
-    background-color: orange;
-    color: #F0F0F0;
+    background-color: plum;
+    color: #0A0707;
 }
 
 /* MAIN */
@@ -256,6 +256,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding-top: 70px;
     padding-bottom: 120px;
     background-color: #1E1E1E;
