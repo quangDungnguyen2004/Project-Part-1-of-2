@@ -113,10 +113,11 @@ body {
 
 /* MAIN */
 .main {
-    margin-top: 120px;
+    margin-top: 50px;
     width: 95%;
     align-items: center;
     justify-content: center;
+
 }
 
 .main .top-part {
@@ -135,46 +136,15 @@ body {
     object-fit: cover;
     border-radius: 15px;
 }
-.main .top-part .top-image-wrapper .prompt-overlay {
-    width: 40%;
-    height: 35%;
-    background-color: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    top: 68%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
-    color: #F0F0F0;
-    border-radius: 12px;
-}
-.main .top-part .top-image-wrapper .prompt-input {
-    width: 35%;
-    height: 20%;
-    background-color: white;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: black;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 20px;
-}
-.main .top-part .top-image-wrapper .prompt-text {
-    width: 38%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
-    color: #F0F0F0;
-    display: flex; /* Use Flexbox to center content inside */
-    justify-content: center; /* Center content horizontally */
-    font-size: 24px;
-}
 .main .top-part .product-purpose {
     color: #F0F0F0;
     font-size: 24px;
     margin-bottom: 300px;
+}
+
+
+.main .overview {
+    
 }
 
 .main .mid-part {
