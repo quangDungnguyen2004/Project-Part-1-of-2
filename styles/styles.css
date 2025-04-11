@@ -103,8 +103,59 @@ body {
     color: #F0F0F0;
 }
 
-.nav .hidden-menu {
+
+.hidden-menu {
     display: none;
+    position: relative; /* Position relative to contain the dropdown */
+}
+
+.hidden-menu img {
+    transition: transform 0.15s ease-in-out; /* Smooth transition for the rotation */
+}
+
+.hidden-menu img:hover {
+    transform: rotate(90deg); /* Rotate the image 90 degrees on hover */
+}
+
+.dropdown-content {
+    opacity: 0; /* Initially invisible */
+    visibility: hidden; /* Initially hidden */
+    position: absolute; /* Position absolutely within the relative container */
+    top: 100%; /* Position directly below the image */
+    left: 50%; /* Start positioning from the center */
+    transform: translateX(-50%); /* Center the dropdown horizontally */
+    background-color: #0A0707;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(15, 129, 223, 0.2);
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Transition for opacity and visibility */
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-content a {
+    color: #F0F0F0;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #888888;
+    transition: color 0.3s ease-in, background-color 0.3s ease-out;
+    border-radius: 15px; /* Transition for color and background-color */
+}
+
+.dropdown-content a:hover {
+    background-color: #0A0707;
+    color: #F0F0F0;
+}
+
+.hidden-menu:hover .dropdown-content {
+    opacity: 1; /* Make visible */
+    visibility: visible; /* Ensure visibility */
 }
 
 .left-selections {
@@ -135,6 +186,8 @@ body {
     background-color: plum;
     color: #0A0707;
 }
+/* End Of NAV */
+
 
 /* MAIN */
 .main {
@@ -164,8 +217,11 @@ body {
     text-align: center;
     margin-bottom: 120px;
 }
+/* End of MAIN */
 
 
+
+/* HOMEPAGE */
 .main .overview {
     display: flex;
     flex-direction: column;
@@ -266,6 +322,12 @@ body {
     margin: 0 auto 100px auto;
     border: 2px solid #F0F0F0;
 }
+/* End Of HOMEPAGE */
+
+/* ABOUTPAGE */
+
+/* End of ABOUTPAGE */
+
 
 /* FOOTER */
 .footer {
@@ -331,3 +393,4 @@ body {
 table, th, td {
     border: 1px solid white;
 }
+/* End Of FOOTER */
