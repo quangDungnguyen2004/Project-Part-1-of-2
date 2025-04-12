@@ -13,6 +13,9 @@
     .main .mid-part {
         width: 90% !important;
     }
+    .about-last-part {
+        width: 90% !important;
+    }
 }
 
 body {
@@ -114,7 +117,7 @@ body {
 }
 
 .hidden-menu img:hover {
-    transform: rotate(90deg); /* Rotate the image 90 degrees on hover */
+    transform: rotate(45deg); /* Rotate the image 90 degrees on hover */
 }
 
 .dropdown-content {
@@ -195,7 +198,6 @@ body {
     width: 85%;
     align-items: center;
     justify-content: center;
-
 }
 
 .main .top-part {
@@ -210,12 +212,46 @@ body {
     width: 100%;
     height: auto;
     border-radius: 15px;
+    box-shadow: 0 0 10px rgba(74, 134, 247, 0.05);
 }
 .main .top-part .product-purpose {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
     color: #F0F0F0;
     font-size: 24px;
-    text-align: center;
+    text-align: center; /* Center text within the element */
     margin-bottom: 120px;
+}
+.main .top-part .product-purpose2 {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    color: #F0F0F0;
+    font-size: 30px;
+    text-align: center; /* Center text within the element */
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+.main .top-part .product-purpose .after-purpose-text1,
+.main .top-part .product-purpose .after-purpose-text2,
+.main .top-part .product-purpose .after-purpose-text3 {
+    color: #F0F0F0;
+    font-size: 20px;
+    max-width: 70%;
+    text-align: center; /* Center text within the element */
+}
+.main .top-part .product-purpose .after-purpose-text1 {
+    opacity: 70%;
+}
+.main .top-part .product-purpose .after-purpose-text2 {
+    opacity: 20%;
+}
+.main .top-part .product-purpose .after-purpose-text3 {
+    opacity: 10%;
 }
 /* End of MAIN */
 
@@ -233,6 +269,7 @@ body {
 .main .overview .overview-images{
     width: 100%;
     height: auto;
+    box-shadow: 0 0 10px rgba(240, 99, 233, 0.05);
 }
 
 .main .overview .image-title {
@@ -294,7 +331,7 @@ body {
 }
 
 .see-more {
-    margin: 100px auto 150px auto; /* Center horizontally and add vertical spacing */
+    margin: 100px auto 100px auto; /* Center horizontally and add vertical spacing */
     text-align: center; /* Center the button text */
     font-size: 24px; /* Adjust font size as needed */
     color: #F0F0F0; /* Set text color */
@@ -314,18 +351,50 @@ body {
     justify-content: center;
     text-align: center;
     padding-top: 70px;
-    padding-bottom: 120px;
+    padding-bottom: 100px;
     background-color: #1E1E1E;
     color: #F0F0F0;
     border-radius: 15px;
     font-size: 20px;
-    margin: 0 auto 100px auto;
-    border: 2px solid #F0F0F0;
+    margin: 70px auto 100px auto;
+    box-shadow: 0 0 10px rgba(255,255, 255, 0.1);
 }
 /* End Of HOMEPAGE */
 
-/* ABOUTPAGE */
 
+/* ABOUTPAGE */
+.main .our-team-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+}
+.main .our-team-top-wrapper {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+}
+.main .rounded-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 80px;
+    border: 2px solid #888888;
+    box-shadow: 0 0 10px rgba(155, 95, 235, 0.22);
+    margin: 20px auto;
+    float: right;
+}
+.main .about-last-part {
+    width: 70%;
+    margin: 0 auto;
+}
+.interests-table {
+    font-weight: bold;
+}
+figure {
+    float: right;
+    margin: 0; /* Remove default margin */
+}
 /* End of ABOUTPAGE */
 
 
@@ -335,6 +404,7 @@ body {
     background-color: #0A0707;
     color: #F0F0F0;
     padding: 20px;
+    margin-top: 50px;
     border-top: 1px solid #888888;
 }
 
@@ -354,6 +424,7 @@ body {
     color: #888888;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.3s ease-in, 0.3s ease-out;
 }
 .footer .links .pricing:hover,
 .footer .links .careers:hover,
@@ -382,6 +453,7 @@ body {
     margin: 0;
     text-decoration: none;
     color: #F0F0F0;
+    transition: 0.3s ease-in, 0.3s ease-out;
 }
 .footer .contact-box .email:hover {
     margin: 0;
@@ -390,7 +462,51 @@ body {
 }
 
 
-table, th, td {
-    border: 1px solid white;
+table {
+    width: 100%;
+    border-collapse: separate; /* Use separate to allow border-radius */
+    border-spacing: 0; /* Remove spacing between cells */
+    border-radius: 15px; /* Round the corners of the table */
+    margin: 70px 0 70px 0;
+    color: #888888;
+    box-shadow: 0 0 10px rgba(155, 95, 235, 0.1);
+    overflow: hidden; /* Ensure rounded corners are visible */
 }
-/* End Of FOOTER */
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+th {
+    background-color: #171717;
+    color: #f0f0f0b9;
+}
+
+td {
+    background-color: #292929;
+}
+
+th:hover, td:hover, dt:hover {
+    color: #F0F0F0; /* Change text color on hover */
+}
+
+dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 20px;
+}
+
+caption {
+    margin-bottom: 50px;
+    color: #F0F0F0;
+}
