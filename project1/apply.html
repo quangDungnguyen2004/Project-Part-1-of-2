@@ -66,7 +66,7 @@
                     </div>
                     <div class="input-block">
                         <label for="dob">Date of Birth</label>
-                        <input type="date" id="dob" name="Date_of_birth" placeholder="mm/dd/yyyy" required>
+                        <input type="date" id="dob" name="Date_of_birth" required>
                     </div>
                 </div>
                 <div class="input-block">
@@ -101,12 +101,13 @@
                         </div>
                         <div class="address-option">
                             <label for="postcode">Postcode</label>
-                            <input type="number" id="postcode" name="Postcode" maxlength="4" pattern="\d{4}" title="Postcode must be 4 digits" placeholder="Enter your postcode" required>
+                            <input type="tel" id="postcode" name="Postcode" maxlength="4" pattern="\d{4}" title="Postcode must be 4 digits" placeholder="Enter your postcode" required>
                         </div>
                         <div class="address-option">
                             <label for="state">State</label>
                             <select class="select-box" name="State" id="state" required>
-                                <option value="VIC" selected>VIC</option>
+                                <option value="">Select your state</option>
+                                <option value="VIC">VIC</option>
                                 <option value="NSW">NSW</option>
                                 <option value="QLD">QLD</option>
                                 <option value="NT">NT</option>
@@ -124,7 +125,7 @@
                 </div>
                 <div class="input-block">
                     <label for="phone">Phone Number</label>
-                    <input type="number" id="phone" name="Phone_number" maxlength="15" pattern="\d{15}"placeholder="0412 345 678" title="Format: 0412 345 678" autocomplete="tel" required>
+                    <input type="tel" id="phone" name="Phone_number" maxlength="15" pattern="\d{15}" placeholder="0412 345 678" title="Format: 0412 345 678" autocomplete="tel" required>
                 </div>
                 <div class="input-block">
                     <fieldset class="skills-section">
