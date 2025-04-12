@@ -393,5 +393,11 @@ table, th, td {
     border: 1px solid white;
 }
 
+#jobpositions {
+    flex-direction: row; 
+    justify-self: center;
+    font-size: 50px;
+    width: 31%;
+}
 
 /* End Of FOOTER */
