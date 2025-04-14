@@ -10,8 +10,10 @@
 <body>
     <nav class="nav">
         <div class="menu">
-            <img id="earthling-icon" src="/images/earthling icon.png" alt="Earthling Icon">
-            <a href="index.html" class="text-wrapper">EARTHLING</a>
+            <a href="index.html" class="clickable-wrapper">
+                <img id="earthling-icon" src="../images/earthling_icon.png" alt="Earthling Icon">
+                <span class="text-wrapper">EARTHLING</span>
+            </a>
         </div>
         <div class="mid-selections">
             <a href="about.html" class="about-us">ABOUT US</a>
@@ -20,9 +22,18 @@
             <a href="jobs.html" class="careers">CAREERS</a>
             <a href="#" class="pricing">PRICING</a>
         </div>
-        <div class="hidden-menu">
-            <img src="../images/dropdownbutton.png" alt="drop down button">
+    <div class="hidden-menu">
+        <img src="../images/dropdownbutton.png" alt="drop down button">
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="about.html" class="about-us">ABOUT US</a></li>
+                <li><a href="#" class="features">FEATURES</a></li>
+                <li><a href="#" class="enterprise">ENTERPRISE</a></li>
+                <li><a href="jobs.html" class="careers">CAREERS</a></li>
+                <li><a href="#" class="pricing">PRICING</a></li>
+            </ul>
         </div>
+    </div>
         <div class="left-selections">
             <div class="signin-button">SIGN IN</div>
             <div class="download-button">DOWNLOAD</div>
@@ -30,16 +41,26 @@
     </nav>
     <main class="main">
         <div class="top-part">
-            <div class="top-image-wrapper">
-                <img id="top-image" src="../images/bluesky.png" alt="sky image">
-                <div class="prompt-overlay"></div>
-                <textarea class="prompt-input" placeholder="prompt here"></textarea>
-                <h2 class="prompt-text">Ask me anything(testing)</h2>
-            </div>
+            <img id="top-image" src="../images/topportion.png" alt="sky image">
             <div class="product-purpose">
                 <h1>The AI Tool To Expand Your Creativity</h1>
                 <p>Design to improve you productivity</p>
             </div>
+        </div>
+        <div class="overview">
+            <div>
+                <p class="image-title">This is a partner who always stands by your side on creative projects, from initial brainstorming to final editing.</p>
+                <img class="overview-images" src="../images/storyprompt.png" alt="Story Prompt">
+            </div>
+            <div>
+                <p class="image-title">It is a tutor who helps you turn your own ideas into working code.</p>
+                <img class="overview-images" src="../images/codeprompt.png" alt="Code Prompt">
+            </div>
+            <div>
+                <p class="image-title">Whether you have a simple idea or a detailed description, it can create an image to match your needs.</p>
+                <img class="overview-images" src="../images/imageprompt.png" alt="Image Prompt">
+            </div>
+            <div class="see-more">Explore more features of Earthling AI</div>
         </div>
         <div class="mid-part">
             <div class="research">
@@ -47,12 +68,12 @@
             </div>
             <div class="news">
                 <div class="left-news">
-                    <img id="research-right" src="../images/bluepallete.png" alt="Left News Image">
+                    <img id="research-left" src="../images/bluepallete.png" alt="Left News Image">
                     <div class="image-label">Introducing the XXXXX benchmark</div>
                     <div class="image-date">Jan 24, 2025</div>
                 </div>
                 <div class="right-news">
-                    <img id="research-left" src="../images/flower.png" alt="Right News Image">
+                    <img id="research-right" src="../images/flower.png" alt="Right News Image">
                     <div class="image-label">Introducing the YYYYY model</div>
                     <div class="image-date">Mar 11, 2025</div>
                 </div>
@@ -67,16 +88,16 @@
     <footer class="footer">
         <div class="links">
             <a href="#" class="pricing">Pricing</a>
-            <a href="#" class="careers">Careers</a>
+            <a href="jobs.html" class="careers">Careers</a>
             <a href="#" class="term">Term</a>
             <a href="#" class="github">GitHub</a>
-            <a href="#" class="jira">Jira</a> <!--add jira link here-->
+            <a href="https://earthlings-team.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?cloudId=83d0d5f4-1b23-4433-a07f-a8ee198e5468&atlOrigin=eyJpIjoiOTI3ZGI1M2IwNzVhNGZkZjk2ZGVkMGQ4YmY2OTdlMDYiLCJwIjoiaiJ9" class="jira">Jira</a> <!--add jira link here-->
         </div>
         <div class="contact-box">
             <div class="contact">Contact:</div>
-            <a class="email" href="example@mail.com">example@mail.com</a>
+            <a class="email" href="info@earthlingai.com.au">info@earthlingai.com.au</a>
         </div>
         <div class="copyright">Copyright © 2025 Earthling. All rights reserved.</div>
-    </footer>"
+    </footer>
 </body>
 </html>

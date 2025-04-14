@@ -10,8 +10,10 @@
 <body>
     <nav class="nav">
         <div class="menu">
-            <img id="earthling-icon" src="/images/earthling icon.png" alt="Earthling Icon">
-            <a href="index.html" class="text-wrapper">EARTHLING</a>
+            <a href="index.html" class="clickable-wrapper">
+                <img id="earthling-icon" src="../images/earthling_icon.png" alt="Earthling Icon">
+                <span class="text-wrapper">EARTHLING</span>
+            </a>
         </div>
         <div class="mid-selections">
             <a href="about.html" class="about-us">ABOUT US</a>
@@ -20,30 +22,146 @@
             <a href="jobs.html" class="careers">CAREERS</a>
             <a href="#" class="pricing">PRICING</a>
         </div>
-        <div class="hidden-menu">
-            <img src="../images/dropdownbutton.png" alt="drop down button">
+    <div class="hidden-menu">
+        <img src="../images/dropdownbutton.png" alt="drop down button">
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="about.html" class="about-us">ABOUT US</a></li>
+                <li><a href="#" class="features">FEATURES</a></li>
+                <li><a href="#" class="enterprise">ENTERPRISE</a></li>
+                <li><a href="jobs.html" class="careers">CAREERS</a></li>
+                <li><a href="#" class="pricing">PRICING</a></li>
+            </ul>
         </div>
+    </div>
         <div class="left-selections">
             <div class="signin-button">SIGN IN</div>
             <div class="download-button">DOWNLOAD</div>
         </div>
     </nav>
     <main class="main">
-        testing
+        <div class="mid-part">
+            <section>
+                <div class="title-wrapper">
+                    <h1>Featured roles</h1>
+                </div>
+                <div class="apply-button">
+                    <a href="apply.html">Apply now ➜</a>
+                </div>
+            </section>
+            <section>
+                <div class="job-grid">
+                    <div class="job-box">
+                        <h3>AI/ML Engineer (Foundational Models)</h3>
+                        <p>📍Melbourne CBD / Hybrid</p>
+                        <p>Join our core AI research team to develop scalable, general-purpose models that power the next generation of intelligent systems.</p>
+                        
+                        <p class="opportunity-details"><strong>Opportunity details</strong></p>
+                        <p><strong>Salary Range:</strong> $110,000 - $140,000 per annum</p>
+
+                        <p><strong>Hiring criteria:</strong></p>
+                        <ol>
+                            <li>3+ years experience in ML model development, preferably with Transformers or Deep RL</li>
+                            <li>Strong background in Python, PyTorch, and large-scale data processing</li>
+                            <li>Familiarity with distributed training, vector databases, or LLM fine-tuning</li>
+                        </ol>
+
+                        <p><strong>Reports To:</strong> Director of Applied AI</p>
+                        <p><strong>Reference ID:</strong> FT105</p>
+                    </div>
+                    <div class="job-box">
+                        <h3>Data Engineer</h3>
+                        <p>📍Sydney, NSW</p>
+                        <p>We're looking for a Data Engineer to design, build, and maintain scalable data pipelines and infrastructure for our AI systems.</p>
+                        
+                        <p class="opportunity-details"><strong>Opportunity details</strong></p>
+                        <p><strong>Salary Range:</strong> $95,000 - $115,000 per annum</p>
+
+                        <p>
+                            <strong>Hiring criteria:</strong>
+                        </p>
+                        <ol>
+                            <li>Minimum 2-4 years experience in data engineering or backend development</li>
+                            <li>Degree in Computer Science, Engineering, or a related field</li>
+                            <li>Experience with tools like Apache Spark, Kafka, Airflow, and SQL/NoSQL databases</li>
+                        </ol>
+
+                        <p><strong>Reports To:</strong> Head of Data Engineering</p>
+                        <p><strong>Reference ID:</strong> FT102</p>
+                    </div>
+                    <div class="job-box">
+                        <h3>Frontend Developer (AI Interfaces)</h3>
+                        <p>📍Remote / Sydney HQ</p>
+                        <p>We're looking for a creative frontend developer to craft beautiful, intuitive UIs that bring cutting-edge AI capabilities to life for users and enterprises.</p>
+                        
+                        <p class="opportunity-details"><strong>Opportunity details</strong></p>
+                        <p><strong>Salary Range:</strong> $90,000 - $115,000 per annum</p>
+
+                        <p><strong>Hiring criteria:</strong></p>
+                        <ol>
+                            <li>2+ years experience in frontend development (React, TypeScript preferred)</li>
+                            <li>Strong UX/UI sensibility and experience building dashboards or developer tools</li>
+                            <li>Bonus: Experience integrating with AI APIs or WebSocket-based live apps</li>
+                        </ol>
+
+                        <p><strong>Reports To:</strong> Head of Product Engineering</p>
+                        <p><strong>Reference ID:</strong> FT106</p>
+                    </div>
+                    <div class="job-box">
+                        <h3>Business Analyst (AI Solutions)</h3>
+                        <p>📍Melbourne or Hybrid</p>
+                        <p>As a Business Analyst, you'll bridge the gap between AI technical teams and business stakeholders, ensuring the delivery of impactful data-driven solutions.</p>
+                        
+                        <p class="opportunity-details"><strong>Opportunity details</strong></p>
+                        <p><strong>Salary Range:</strong> $85,000 - $110,000 per annum</p>
+
+                        <p>
+                            <strong>Hiring criteria:</strong>
+                        </p>
+                        <ol>
+                            <li>2+ years of experience as a BA, preferably in tech or data-driven environments</li>
+                            <li>Strong analytical and communication skills</li>
+                            <li>Understanding of AI/ML concepts is a plus</li>
+                        </ol>
+
+                        <p><strong>Reports To:</strong> Product Manager</p>
+                        <p><strong>Reference ID:</strong> FT104</p>
+                    </div>
+                </div>
+            </section>
+            <section class="benefits-section">
+                <div class="title-wrapper">
+                    <h1>Benefits</h1>
+                </div>
+                <ul>
+                    <li>Competitive salary packages</li>
+                    <li>Flexible working hours and remote work options</li>
+                    <li class="benefits-text0">Professional development and training opportunities</li>
+                    <li class="benefits-text1">Collaborative and inclusive work environment</li>
+                    <li class="benefits-text2">Opportunities for career growth and advancement</li>
+                    <li class="benefits-text3">Generous paid time off and holiday policies</li>
+                    <li class="benefits-text4">Employee discounts and perks</li>
+                </ul>
+                <div class="see-more">See more</div>
+            </section>
+        </div>
     </main>
+    <div class="update-section">
+        <aside>Latest update: 4/14/2025</aside>
+    </div>
     <footer class="footer">
         <div class="links">
             <a href="#" class="pricing">Pricing</a>
-            <a href="#" class="careers">Careers</a>
+            <a href="jobs.html" class="careers">Careers</a>
             <a href="#" class="term">Term</a>
             <a href="#" class="github">GitHub</a>
-            <a href="#" class="jira">Jira</a> <!--add jira link here-->
+            <a href="https://earthlings-team.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?cloudId=83d0d5f4-1b23-4433-a07f-a8ee198e5468&atlOrigin=eyJpIjoiOTI3ZGI1M2IwNzVhNGZkZjk2ZGVkMGQ4YmY2OTdlMDYiLCJwIjoiaiJ9" class="jira">Jira</a> <!--add jira link here-->
         </div>
         <div class="contact-box">
             <div class="contact">Contact:</div>
-            <a class="email" href="example@mail.com">example@mail.com</a>
+            <a class="email" href="info@earthlingai.com.au">info@earthlingai.com.au</a>
         </div>
         <div class="copyright">Copyright © 2025 Earthling. All rights reserved.</div>
     </footer>
 </body>
-</html>
+</html> 
