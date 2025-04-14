@@ -11,7 +11,7 @@
     <nav class="nav">
         <div class="menu">
             <a href="index.html" class="clickable-wrapper">
-                <img id="earthling-icon" src="../images/earthling_icon.png" alt="Earthling Icon">
+                <div id="earthling-icon" alt="Earthling Icon"></div>
                 <span class="text-wrapper">EARTHLING</span>
             </a>
         </div>
@@ -20,7 +20,7 @@
             <a href="#" class="features">FEATURES</a>
             <a href="#" class="enterprise">ENTERPRISE</a>
             <a href="jobs.html" class="careers">CAREERS</a>
-            <a href="#" class="pricing">PRICING</a>
+            <a href="mailto:info@earthlingai.com.au" class="contact-us">CONTACT US</a>
         </div>
     <div class="hidden-menu">
         <img src="../images/dropdownbutton.png" alt="drop down button">
@@ -30,7 +30,7 @@
                 <li><a href="#" class="features">FEATURES</a></li>
                 <li><a href="#" class="enterprise">ENTERPRISE</a></li>
                 <li><a href="jobs.html" class="careers">CAREERS</a></li>
-                <li><a href="#" class="pricing">PRICING</a></li>
+                <li><a href="mailto:info@earthlingai.com.au" class="contact-us">CONTACT US</a></li>
             </ul>
         </div>
     </div>
@@ -49,11 +49,11 @@
         </div>
         <div class="overview">
             <div>
-                <p class="image-title">This is a partner who always stands by your side on creative projects, from initial brainstorming to final editing.</p>
+                <p class="image-title">It's a <span id="partner">partner</span> who always stands by your side on creative projects, from initial brainstorming to final editing.</p>
                 <img class="overview-images" src="../images/storyprompt.png" alt="Story Prompt">
             </div>
             <div>
-                <p class="image-title">It is a tutor who helps you turn your own ideas into working code.</p>
+                <p class="image-title">A <span id="tutor">tutor</span> who helps you turn your own ideas into working code.</p>
                 <img class="overview-images" src="../images/codeprompt.png" alt="Code Prompt">
             </div>
             <div>
@@ -86,18 +86,23 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="links">
-            <a href="#" class="pricing">Pricing</a>
-            <a href="jobs.html" class="careers">Careers</a>
-            <a href="#" class="term">Term</a>
-            <a href="#" class="github">GitHub</a>
-            <a href="https://earthlings-team.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?cloudId=83d0d5f4-1b23-4433-a07f-a8ee198e5468&atlOrigin=eyJpIjoiOTI3ZGI1M2IwNzVhNGZkZjk2ZGVkMGQ4YmY2OTdlMDYiLCJwIjoiaiJ9" class="jira">Jira</a> <!--add jira link here-->
+        <div class="footer-content">
+            <div class="links">
+                <a href="#" class="pricing">Pricing</a>
+                <a href="jobs.html" class="careers">Careers</a>
+                <a href="#" class="term">Term</a>
+                <a href="#" class="github">GitHub</a>
+                <a href="https://earthlings-team.atlassian.net/jira/software/projects/SCRUM/summary?atlOrigin=eyJpIjoiMTAxNDgwMGYzMDk1NDI2MmI4NTk1NGYzZTFjNjcyZmMiLCJwIjoiaiJ9" class="jira">Jira</a> <!--add jira link here-->
+            </div>
+            <div class="copyright">Copyright © 2025 Earthling. All rights reserved.</div>
         </div>
-        <div class="contact-box">
-            <div class="contact">Contact:</div>
-            <a class="email" href="info@earthlingai.com.au">info@earthlingai.com.au</a>
-        </div>
-        <div class="copyright">Copyright © 2025 Earthling. All rights reserved.</div>
     </footer>
 </body>
 </html>
+<!--
+AI prompt used
+- Generate blue palette art and red flower for me
+*Additional note:I have used minor prompts with different AIs like GPT-4o, Claude 3.5 / 3.7 Sonnet to 
+mostly help me fix my coding problems related to inappropriate formats as well as noticing unnecessary code. 
+The rest of the designing work which is around 70% of the design are made through one own knowledge in Figma
+-->

@@ -1,3 +1,10 @@
+/* 
+ * Author: H.L.D, T.N, N.Q.D
+ * File: styles.css
+ * Purpose: Styling the all HTML files, including layout, typography, and responsiveness across devices.
+ * Date: [Date of creation or last update]
+ */
+
 @media (max-width: 1300px) {
     .main .overview {
         width: 95% !important;
@@ -25,7 +32,7 @@ body {
     background-color: #0A0707;
     color: #F0F0F0;
     font-family: 'Geist Mono', sans-serif; /* Use Geist Mono font for the entire body */
-    margin: 0;
+    margin: 0 auto;
     flex-direction: column;
     align-items: center;
 }
@@ -77,6 +84,10 @@ body {
 #earthling-icon {
     width: 45px;
     height: 45px;
+    background-image: url("images/earthling_icon.png");
+    background-size: contain;
+    background-position: center;
+    border-radius: 10px;
 }
 
 .nav .mid-selections {
@@ -93,7 +104,7 @@ body {
 .nav .mid-selections .features,
 .nav .mid-selections .enterprise,
 .nav .mid-selections .careers,
-.nav .mid-selections .pricing {
+.nav .mid-selections .contact-us {
     text-decoration: none;
     color: #888888;
     transition: 0.3s ease-in, 0.3s ease-out; /* Specify properties */
@@ -102,7 +113,7 @@ body {
 .nav .mid-selections .features:hover,
 .nav .mid-selections .enterprise:hover,
 .nav .mid-selections .careers:hover,
-.nav .mid-selections .pricing:hover {
+.nav .mid-selections .contact-us:hover {
     text-decoration: none;
     color: #F0F0F0;
 }
@@ -220,7 +231,7 @@ body {
     color: #F0F0F0;
     font-size: 24px;
     text-align: center; /* Center text within the element */
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 .main .top-part .product-purpose2 {
     display: flex; /* Use flexbox for centering */
@@ -272,6 +283,14 @@ body {
     font-size: 24px;
 }
 
+#partner {
+    color: lightblue;
+}
+
+#tutor {
+    color: plum;
+}
+
 .main .mid-part {
     display: flex;
     flex-direction: column;
@@ -312,9 +331,15 @@ body {
     text-align: left; /* Align the label text to the left */
     margin-top: 10px; /* Add space between the image and the label */
     font-size: 24px; /* Adjust font size as needed */
-    color: #FFFFFF; /* Set text color */
+    color: #c2c2c2; /* Set text color */
     cursor: pointer;
+    transition: 0.3s ease-in, 0.3s ease-out;;
 }
+
+.image-label:hover {
+    color: #FFFFFF;
+}
+
 
 .image-date {
     text-align: left; /* Align the date text to the left */
@@ -362,6 +387,9 @@ body {
     text-align: center;
     font-size: 24px;
 }
+.main .title-wrapper h1{
+    font-size: 44px;
+}
 .main .our-team-top-wrapper {
     display: block;
     text-align: center;
@@ -380,6 +408,9 @@ body {
 .main .about-last-part {
     width: 70%;
     margin: 0 auto;
+}
+#interest-title::first-line {
+    color: rgb(255, 160, 100);
 }
 .interests-table {
     font-weight: bold;
@@ -538,6 +569,7 @@ figure {
 .select-box {
     border-radius: 10px;
     padding: 18px;
+    color:#888888;
     border: 2px solid #888888;
     background-color: #f9f9f9;
     appearance: none; /* Removes default styling for a custom look */
@@ -546,6 +578,12 @@ figure {
 .select-box:focus {
     border-color: #0A0707; /* Changes border color on focus */
     outline: none; /* Removes default outline */
+}
+.select-box option {
+    color:#0A0707;
+}
+#dob {
+    color:#888888;
 }
 .left-button,
 .right-button {
@@ -624,19 +662,24 @@ fieldset {
 
 /* FOOTER */
 .footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.footer .footer-content {
     width: 90%;
     background-color: #0A0707;
     color: #F0F0F0;
-    padding: 20px;
+    padding: 20px 0 20px 0;
     margin-top: 50px;
-    border-top: 1px solid #888888;
+    border-top: 2px solid #2e2e2e;
 }
 
 .footer .links {
     width: 30%;
     display: flex;
     gap: 25px; /* Add a 20px gap between child elements */
-    margin: 25px auto; /* Center child elements horizontally */
+    margin: 10px auto 50px auto; /* Center child elements horizontally */
     justify-content: center; /* Center child elements horizontally */
 }
 
@@ -659,30 +702,8 @@ fieldset {
     text-decoration: none;
     cursor: pointer;
 }
-
-.footer .contact-box {
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    gap: 5px; /* Add a 20px gap between child elements */
-    margin: 40px auto; /* Center child elements horizontally */
-    justify-content: center;
-}
-
-.footer .contact-box .contact {
-    margin: 0;
-    color: #F0F0F0;
-}
-.footer .contact-box .email {
-    margin: 0;
-    text-decoration: none;
-    color: #F0F0F0;
-    transition: 0.3s ease-in, 0.3s ease-out;
-}
-.footer .contact-box .email:hover {
-    margin: 0;
-    text-decoration: none;
-    color: pink;
+.copyright {
+    text-align: center;
 }
 /* End of FOOTER */
 
