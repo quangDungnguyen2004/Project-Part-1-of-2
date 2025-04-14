@@ -241,8 +241,8 @@ body {
     color: #F0F0F0;
     font-size: 28px;
     text-align: center; /* Center text within the element */
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 .main .top-part .product-purpose3 {
     display: flex; /* Use flexbox for centering */
@@ -473,6 +473,21 @@ figure {
 }
 .benefits-section li {
     font-size: 18px;
+}
+.benefits-section .benefits-text0 {
+    opacity: 70%;
+}
+.benefits-section .benefits-text1 {
+    opacity: 50%;
+}
+.benefits-section .benefits-text2 {
+    opacity: 25%;
+}
+.benefits-section .benefits-text3 {
+    opacity: 15%;
+}
+.benefits-section .benefits-text4 {
+    opacity: 10%;
 }
 
 .apply-button {
