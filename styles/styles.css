@@ -443,21 +443,7 @@ figure {
 .benefits-section li {
     font-size: 18px;
 }
-.benefits-text0 {
-    opacity: 70%;
-}
-.benefits-text1 {
-    opacity: 50%;
-}
-.benefits-text2 {
-    opacity: 40%;
-}
-.benefits-text3 {
-    opacity: 20%;
-}
-.benefits-text4 {
-    opacity: 10%;
-}
+
 .apply-button {
     margin: 40px auto 40px auto; /* Center horizontally and add vertical spacing */
     padding: 20px 0;
