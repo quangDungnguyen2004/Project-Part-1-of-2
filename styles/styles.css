@@ -409,7 +409,7 @@ body {
     width: 70%;
     margin: 0 auto;
 }
-#interest-title::first-line {
+.interest-title::first-line {
     color: rgb(255, 160, 100);
 }
 .interests-table {
